@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container"><div class='box'>Kovalova is the best </div>
+<div class='time'></div></div>
+
+
+</body>
+<script>
+const node = document.querySelector('.box');
+[...Array(503)].forEach(_ => node.parentNode.insertBefore(node.cloneNode(true), node));
+</script>
+</html>
